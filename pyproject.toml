@@ -6,3 +6,13 @@ build-backend = "flit_core.buildapi"
 name = "mypackage"
 version = "0.1.0"
 description = "My first package"
+dependencies = [
+  "numpy"
+]
+
+[project.optional-dependencies]
+dev = [
+  "bumpver",
+  "pytest",
+  "pytest-cov",
+]
